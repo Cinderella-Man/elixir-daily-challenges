@@ -74,15 +74,15 @@ Useful to get this running as soon as possible:
 
 ```
 defmodule Project do
-
+  defstruct [:name, layer_groups: []]
 end
 
 defmodule LayerGroup do
-
+  defstruct [:name, layers: []]
 end
 
 defmodule Layer do
-
+  defstruct [:name, :visibility]
 end
 ```
 
